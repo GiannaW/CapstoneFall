@@ -3,200 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Alumni Survey</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-body{
-  background: #0F228C;
-  padding: 0 10px;
-}
-.wrapper{
-  max-width: 600px;
-  width: 100%;
-  background: #fff;
-  margin: 85px auto;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
-  padding: 30px;
-}
-
-.wrapper .title{
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  color: #0F228C;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.wrapper .form{
-  width: 100%;
-}
-
-.wrapper .form .inputfield{
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.wrapper .form .inputfield label{
-   width: 300px;
-   color: #757575;
-   margin-right: 15px;
-  font-size: 14px;
-}
-
-.wrapper .form .inputfield .input{
-  width: 100%;
-  outline: none;
-  border: 1px solid #d5dbd9;
-  font-size: 15px;
-  padding: 8px 10px;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.wrapper .form .inputfield .custom_select{
-  position: relative;
-  width: 100%;
-  height: 37px;
-}
-
-.wrapper .form .inputfield .custom_select:before{
-  content: "";
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  border: 8px solid;
-  border-color: #d5dbd9 transparent transparent transparent;
-  pointer-events: none;
-}
-
-.wrapper .form .inputfield .custom_select select{
-  -webkit-appearance: none;
-  -moz-appearance:   none;
-  appearance:        none;
-  outline: none;
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  padding: 8px 10px;
-  font-size: 15px;
-  border: 1px solid #d5dbd9;
-  border-radius: 3px;
-}
-
-
-.wrapper .form .inputfield .input:focus,
-.wrapper .form .inputfield .textarea:focus,
-.wrapper .form .inputfield .custom_select select:focus{
-  border: 1px solid #fec107;
-}
-
-.wrapper .form .inputfield p{
-   font-size: 14px;
-   color: #757575;
-}
-.wrapper .form .inputfield .check{
-  width: 15px;
-  height: 15px;
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-.wrapper .form .inputfield .check input[type="checkbox"]{
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-.wrapper .form .inputfield .check .checkmark{
-  width: 15px;
-  height: 15px;
-  border: 1px solid #fec107;
-  display: block;
-  position: relative;
-}
-.wrapper .form .inputfield .check .checkmark:before{
-  content: "";
-  position: absolute;
-  top: 1px;
-  left: 2px;
-  width: 5px;
-  height: 2px;
-  border: 2px solid;
-  border-color: transparent transparent #fff #fff;
-  transform: rotate(-45deg);
-  display: none;
-}
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
-  background: #fec107;
-}
-
-.wrapper .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
-  display: block;
-}
-
-.wrapper .form .inputfield .btn{
-  width: 100%;
-   padding: 8px 10px;
-  font-size: 15px; 
-  border: 0px;
-  background:  #fec107;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px;
-  outline: none;
-}
-
-.wrapper .form .inputfield .btn:hover{
-  background: #ffd658;
-}
-
-.wrapper .form .inputfield:last-child{
-  margin-bottom: 0;
-}
-
-@media (max-width:420px) {
-  .wrapper .form .inputfield{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .wrapper .form .inputfield label{
-    margin-bottom: 5px;
-  }
-  .wrapper .form .inputfield.terms{
-    flex-direction: row;
-  }
-}
-
-
-    </style>
-   
+    <script src="https://kit.fontawesome.com/11ceb9e81d.js" crossorigin="anonymous">
+    
+    
+    
+    
+    </script>
+    
+    <link rel="stylesheet" href="RocioSurvey.css">
 </head>
 <body>
     <div class="wrapper">
-        <div class="title">
-            Alumni Survey
+        <div class="top-text">
+            <h1 class="logoName"><a href="home-page.html">ALUMNI DATABASE</a></h1>
+            <img class="logo" src="logo.svg"/>
         </div>
-
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="home-page.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-circle"></i></a></li>
+            </ul>
+        </div>
+        <div class="main_content">
+            <h2>Welcome to the Alumni Survey</h2>
+            <h3>Here you can submit your survey information</h3>
+        </div>
         <form class="container" method="post" action="/">
-
-
+        
        
         <div class="form">
             <div class="input-fields">
                 <label>First Name</label>
-                <input name="Name" type="text" class="input">
+                <input name="Name", type="text" ,class="input">
             </div>
             <div class="input-fields">
                 <label>Last Name</label>
-                <input type="text" class="input">
+                <input   type="text", class="input">
             </div>
             <div class="input-fields">
                 <label>Pronouns</label>
@@ -225,16 +68,10 @@ body{
                 <label>College Major</label>
                 <input name="Major" type="text" class="input">
             </div>
-            <div class="input-fields">
-
-                <label >Post Undergrad:</label>
-                <select name="Postgrad" >
-                  <option value="Employed">Employed</option>
-                  <option value="SelfE">Self-Employed</option>
-                  <option value="GradSchool">Graduate School</option>
-                  <option value="other">Unemployed</option>
-                </select>
-            </div>
+            <!-- <div class="input-fields">
+                <label>Postgrad Plan</label>
+                <input name="Postgrad" type="text" class="input">
+            </div> -->
             <div class="input-fields">
                 <label>Employment</label>
                 <div class="custom-selection">
@@ -245,10 +82,24 @@ body{
                     </select>
                 </div>
             </div>
+
+            <div class="input-fields">
+                <label>Employment</label>
+                <div class="custom-selection">
+                    <select name="Postgrad" >
+                        <option value="Employed">Employed</option>
+                        <option value="SelfE">Self-Employed</option>
+                        <option value="GradSchool">Graduate School</option>
+                        <option value="other">Unemployed</option>
+                      </select>
+                </div>
+            </div>
+           
+<!-- 
             <div class="input-fields">
                 <label>Current Job Title</label>
                 <input type="text" class="input">
-            </div>
+            </div> -->
             <div class="input-fields">
                 <label>What Sectors Are You Employed In?</label>
                 <div class="custom-selection">
@@ -262,36 +113,36 @@ body{
             </div>
             <div class="input-fields">
                 <label>What is important for success in CS/IT?</label>
-                <input type="text", name= "successinCSIT", class="input>
+                <input type="text", name= "Question3", class="input">
             </div>
             <div class="input-fields">
                 <label>What personality traits do employers look for in students?</label>
-                <input type="text", name= "personalitytraitsemployerslookfor", class="input">
+                <input type="text", name= "Question4", class="input">
             </div>
             <div class="input-fields">
                 <label>What are the ideal skill sets for a new hire?</label>
-                <input type="text", name="skillsets", class="input",>
+                <input type="text" class="input">
             </div>
             <div class="input-fields">
                 <label>What five tips would give students preparing to enter CS/IT? </label>
-                <input type="text" , name="tipsforStudents", class="input">
+                <input type="text" , name="Question6", class="input">
             </div>
             <div class="input-fields">
                 <label>Which classes at American University prepared you the most?</label>
-                <input type="text"         , name="classesAUprepared", class="input">
+                <input type="text"         , name="Question7", class="input">
             </div>
             <div class="input-fields">
                 <label>What made these classes useful?</label>
-                <input type="text"      , name="usefullclasses", class="input"'>
+                <input type="text"      , name="Question8", class="input"'>
             </div>
             <div class="input-fields">
                 <label>What do you wish was offered at American University within the CS department?</label>
-                <input type="text"       , name="NewofferingsatAU", class="input"'>
+                <input type="text"       , name="Question9", class="input"'>
             </div>
             <div class="input-fields-submit">
                 <input type="submit" value="Submit" class="btn">
             </div>
         </div>
- </form>
     </div>
+</form>
 </body>
